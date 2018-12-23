@@ -1,0 +1,26 @@
+@mixin span($fw){
+    border: 1px solid black;
+    padding: 5px 15px;
+    font-weight: $fw;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+}
+
+// @mixin respond-to($breakpoint){
+    
+//     @if(map-has-key($map: $breakpoints, $key: $breakpoint)){
+//         $value: map-get($map: $breakpoints, $key:$breakpoint);
+
+//         @if $breakpoint == medium{
+//             @media screen and (max-width: $value){
+//                 @content
+//             }
+//         } 
+//         @else if $breakpoint == large{
+//             @media screen and (min-width: $value){
+//                 @content
+//             }
+//         }
+        
+//     }
+    
+// }

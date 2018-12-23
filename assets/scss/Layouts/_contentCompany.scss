@@ -1,0 +1,89 @@
+.contentCompany{
+    text-align: center;
+    h1{
+        font-size: 30px;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+    }
+    .title{
+        font-size: 30px;
+        padding-top: 25px;
+    }
+    .line{
+        display: flex;
+        justify-content: center;
+        padding: 52px 0;
+        p:nth-child(1){
+            background-color: black;
+            width: 65px;
+            height: 3px;;
+        }
+        p:nth-child(2){
+            background-color: #fac409;
+            width: 65px;
+            height: 3px;;
+        }
+    }
+    .contentCompany__logo{
+        .logo__item{
+            position: relative;
+            overflow: hidden;
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: white;
+                font-weight: normal;
+                font-size: 18px;
+            }
+            img{
+                height: 100%;
+                transition: all 1s ease-out;
+            }
+            &:hover img{
+                transform: scale(1.06);
+            }
+        }
+    }
+}
+
+// REPONSIVE
+@media only screen and (min-width: 769px){
+    .contentCompany{
+        padding: 80px 395px;
+        .text{
+           padding: 0 200px;
+        }
+        .contentCompany__logo{
+            display: flex;
+            margin-top: 70px;
+            .logo__item{
+                &.active{
+                    margin: 0 20px;
+                }
+            }  
+        }
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .contentCompany{
+        padding-top: 100px ;
+        .text{
+            text-align: justify;
+            padding: 0 70px;
+            font-size: 25px;
+        }
+        .contentCompany__logo{
+           position: relative;
+           top: 210px;
+            .logo__item{
+                width: 400px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                margin-top: 50px;
+            }
+        }
+    }
+}

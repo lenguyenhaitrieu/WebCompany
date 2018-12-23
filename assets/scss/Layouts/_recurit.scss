@@ -1,0 +1,107 @@
+.recurit{
+    position: relative;
+    h2{
+        padding: 20px 0;
+    }
+    .recurit__first{
+        .recurit__text{
+            span{
+                @include span($fw-bold);
+            }
+            .intro__btn{
+                background-color: #fcd000;
+                border: none;
+                cursor: pointer;
+                font-size: $fs-1;
+                i{
+                    padding: 0 20px;
+                    font-weight: $fw-bold;
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .recurit__two{
+        .recurit__img{
+            background-image: url(../img/index2.jpg);
+            background-size: cover;
+        }
+        span {
+            @include span($fw-normal);
+        }
+    }
+}
+
+// REPONSIVE
+@media only screen and(min-width:769px)
+{
+    .recurit{
+        padding: 0 390px;
+        .recurit__first{
+            display: flex;
+            .recurit__img{
+                height: 418px;
+            }
+            .recurit__text{
+                padding: 45px 0px 45px 45px;
+                background-color: $color-bg;
+                .intro__btn{
+                    width: 350px;
+                    height: 55px;
+                    margin-top: 70px;
+                }
+            }
+        }
+        .recurit__two{
+            padding: 100px 0;
+            display: flex;
+            .recurit__img{
+                height: 280px;
+                width: 695px;
+            }
+            .recurit__textTwo{
+                background-color: $color-main;
+                padding: 45px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    .recurit{
+        padding: 50px 30px;
+        .recurit__first{
+            .recurit__img img{
+                    width: 95%;
+                    height: 350px;
+                    position: relative;
+                    top: 170px;
+                    z-index:5;
+            }
+            .recurit__text{
+                    position: absolute;
+                    width: 88%;
+                    top: 0;
+                    .intro__btn{
+                        width: 99%;
+                        height: 55px;
+                        position: absolute;
+                        bottom: -450px;
+                    }
+                }
+        }
+        .recurit__two{
+                position: relative;
+                top: 270px;
+                margin-bottom: 70px;
+                .recurit__img {
+                    height: 280px;
+                    width: 94%;
+                }
+                .recurit__textTwo{
+                    font-size: $fs-2;
+                }
+            }
+        }
+}

@@ -1,0 +1,184 @@
+.intro{
+    .intro__title{
+        background-color: #fcd000;
+        padding: 15px 0;
+        position: relative;
+        text-align: center;
+        h2{
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+        }
+        &::before{
+            content: "";
+            border-top: 15px solid #fcd000;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            position: absolute;
+            bottom: -12%;
+        }
+    }
+    .intro__content{
+        background-color: white;
+        .title__bold{
+            font-weight: $fw-bold;
+            font-size: $fs-3;
+            margin: 0;
+        }
+        p{
+            font-size: $fs-1;  
+        }
+        .intro__btn{
+            background-color: #fcd000;
+            border: none;
+            cursor: pointer;
+            i{
+                padding: 0 20px;
+                font-weight: $fw-bold;
+                font-size: 17px;
+            }
+        }
+    }
+    .intro__item{
+        .service{
+            background-color: $color-black;
+            color: white;
+            .service__text{
+                text-align: center;
+                & p:nth-child(1){
+                    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+                }
+            }
+        }
+        .item{
+            img{
+                border-radius: 50%;
+                width: 95px;
+                height: 95px;
+            }
+        }
+    }
+}
+
+// REPONSIVE
+@media only screen and(min-width:769px)
+{
+    .intro{
+        background-color: #eeeeee;
+        padding: 60px 390px;
+        .intro__content{
+            padding: 64px 60px;
+            .myContent{
+                display: flex;
+                .content__text{
+                    padding: 0 34px;
+                    .title__bold{
+                        padding-bottom: 40px;
+                    }
+                    .intro__btn{
+                        width: 350px;
+                        height: 55px;
+                        font-size: $fs-1;
+                        margin-top: 70px;
+                    }
+                }
+            }
+            .intro__item{
+                padding-top: 60px;
+                display: flex;
+                .service{
+                    width: 265px;
+                    height: 188px;
+                    .service__text{
+                       padding-top: 70px;
+                       & p:nth-child(1)
+                       {
+                        font-size: $fs-2;
+                       }
+                    }
+                }
+                .item{
+                    background-color: #eeeeee;
+                    width: 720px;
+                    height: 188px;
+                    .item__logo{
+                        display: inline-block;
+                        position: relative;
+                        top: 50%;
+                        left: 7%;
+                        margin-left: 55px;
+                        transform: translate(-50%,-50%);
+                        text-align: center;
+                            i{
+                                display: none;
+                            }
+                        }
+                    }   
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    .intro{
+        padding: 60px 0;
+        .intro__content{
+            .content__img img{
+                width: 100%;
+                height: 405px;
+            }
+            .content__text{
+                 padding: 0 0 0 30px;
+                 width: 80%;
+                .title__bold{
+                    padding-bottom: 20px;
+                }
+                .intro__btn{
+                    width: 100%;
+                    height: 70px;
+                    font-size: $fs-2;
+                    margin-top: 40px;
+                }
+            }
+            .intro__item{
+                padding:60px 0 0 30px;
+                .service{
+                    width: 83%;
+                    height: 70px;
+                    .service__text{
+                        & p:nth-child(1)
+                        {
+                        line-height: 70px;
+                        font-size: $fs-4;
+                        }
+                        & p:nth-child(2){
+                            display: none;
+                        }
+                    }
+                }
+                .item{
+                        .item__logo{ 
+                          display: flex;
+                          background-color: #eeeeee;
+                          width: 83%;
+                          height: 70px;
+                          padding: 3em 0;
+                            img{
+                                margin-left: 20px;
+                                }
+                                p{
+                                    margin:30px 0 0 20px;
+                                    width: 200px;
+                                    font-size: 25px;
+                                }
+                                i{
+                                    display: inline;
+                                    margin: 0 auto;
+                                    line-height: 95px;
+                                    font-weight: bold;
+                                    font-size: 30px;
+                                }
+                            }
+                        }   
+            }
+        }
+    }
+}

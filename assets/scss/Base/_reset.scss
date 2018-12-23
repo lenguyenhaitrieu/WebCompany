@@ -1,0 +1,25 @@
+// GLOBAL SETTING
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+@media only screen and(min-width:769px)
+{
+    body{
+        width: 1920px;
+    }
+}
+
+@media only screen and(max-width:768px)
+{
+    body{
+        width: 100%;
+    }
+}

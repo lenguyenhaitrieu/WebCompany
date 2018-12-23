@@ -1,0 +1,30 @@
+.myHeader{
+    background-color: $color-black;
+    color: $color-white;
+    font-size: 12px;
+    .myHeader__content{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        li{
+            margin: 10px 20px ;
+        }
+        li:first-child{
+           border-right: 1px solid $color-white;
+           padding-right: 35px;
+       }
+    }
+}
+
+// REPONSIVE
+@media only screen and (min-width: 769px){
+    .myHeader{
+        padding: 0 395px;
+    }   
+}
+
+@media only screen and (max-width: 768px){
+    .myHeader{
+        width: 100%;
+    }
+}

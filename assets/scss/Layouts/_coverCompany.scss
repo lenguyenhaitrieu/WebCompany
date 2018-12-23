@@ -1,0 +1,74 @@
+.coverCompany{
+    background-image: url(../img/Layer-6.jpg);
+    background-size: cover;
+    position: relative;
+    .background{
+        background-color: rgba(0,0,0,0.3);
+    }
+    .coverCompany__text{
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: white;
+        font-weight: bold;
+        font-size: $fs-2;
+        span{
+            padding: 5px 50px;
+            border: 1px solid white;
+            font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", serif;
+        }
+        h2{
+            letter-spacing: 2px;
+        }
+    }
+    .coverCompany__page{
+        display: flex;
+        background-color: $color-bg;
+        i{
+            padding: 4px 20px;
+            font-weight: bold;
+        }
+    }
+}
+
+// REPONSIVE
+@media only screen and (min-width: 769px){
+    .coverCompany{
+        height: 430px;
+        background-position: center -70px;
+        .background{
+            height: 430px;
+        }
+        .coverCompany__text{
+            h2{
+                margin-top: 10px;
+            }
+        }
+        .coverCompany__page{
+            padding: 5px 395px;
+        }
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .coverCompany{
+        height: 330px;
+        background-position: center center;
+        .background{
+                height: 330px;
+            }
+            .coverCompany__text{
+                    span{
+                        font-size: 32px;
+                    }
+                    h2{
+                        font-size: 42px;
+                    }
+                }
+                 .coverCompany__page{
+                        padding: 10px 15px;
+                    }
+     }
+}

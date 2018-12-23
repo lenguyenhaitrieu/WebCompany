@@ -1,0 +1,82 @@
+.foot{
+    position: relative;
+    .foot__end{
+        text-align: center;
+        background-color: $color-black;
+        color: white;
+        padding: 20px 0;
+        position: relative;
+    }
+}
+
+// REPONSIVE
+@media only screen and (min-width:769px)
+{
+    .foot{
+        .foot__include{
+            padding: 45px 390px;
+            .foot__heading{
+                display: flex;
+                .heading__img img{
+                    width: 232px;
+                    margin-right: 70px;
+                }
+            }
+            .line{
+                margin: 50px 0;
+                border-bottom: 1px solid rgb(180, 179, 179);
+            }
+            .foot__content{
+                display: flex;
+                .foot__item{
+                    margin-right: 95px;
+                    .item__text{
+                        height: 145px;
+                    }
+                    .active{
+                        padding-bottom: 20px;
+                    }
+                    i{
+                        margin-right: 10px;
+                        font-weight: bold;
+                    }
+                  
+                    
+                }
+            }
+        }
+        .foot__end{
+            text-align: center;
+            background-color: $color-black;
+            color: white;
+            padding: 20px 0;
+        }
+    }
+}
+@media only screen and (max-width:768px)
+{
+    .foot{
+        top: 260px;
+        margin: 0 auto;
+        .foot__include{
+            padding: 50px 0;
+            .foot__heading{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                .foot__text{
+                    padding-top: 1em;
+                    text-align: center;
+                    font-size: $fs-2;
+                }
+            }
+            .foot__content{
+                display: none;
+            }
+        }
+        .foot__end{
+            top: 100px;
+        }
+    }
+}
